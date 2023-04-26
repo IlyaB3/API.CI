@@ -24,6 +24,6 @@ class MobileBankApiTestV4 {
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
                 .body("[0].currency", equalTo("RUB"))
                 .body("[1].currency", equalTo("USD"))
-                .body("[2].currency", equalTo("RUR"));
+                .body("[2].currency", equalTo("RUB"));
     }
 }
